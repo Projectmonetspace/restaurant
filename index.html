@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Unidine serves fresh, vibrant comfort food made for every craving.">
+  <meta name="theme-color" content="#fff8ef">
+  <title>Unidine - Savor the Taste of Perfection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fredoka:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="home">
+    <a class="brand" href="#home" aria-label="Unidine home"><span class="brand-mark">♨</span><span>Unidine</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav"><span></span><span></span></button>
+    <nav id="site-nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="mailto:contact@projectmonet.space?subject=Unidine%20enquiry">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="cart" href="tel:+918290096163" aria-label="Call to place an order">🛍</a>
+      <a class="button button-dark button-small" href="mailto:contact@projectmonet.space?subject=Unidine%20location%20enquiry">See Locations <span>→</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-shell" aria-labelledby="hero-title">
+      <img class="float-card float-left" src="assets/cta-burger.jpg" alt="Stacked signature burger" width="485" height="565">
+      <img class="float-card float-right" src="assets/floating-menu.jpg" alt="Chef preparing food" width="465" height="480">
+      <div class="eyebrow-icon">♨</div>
+      <h1 id="hero-title">Savor the Taste of<br>Perfection.</h1>
+      <p>Fresh ingredients, mouth-watering recipes, and a passion for good food<br class="desktop-only"> delivered to your door or ready for pick-up.</p>
+      <a class="button button-orange" href="tel:+918290096163">Order Now <span>→</span></a>
+      <div class="hero-media">
+        <img src="assets/hero-wrap.jpg" alt="Freshly prepared grilled wrap with vegetables" width="1306" height="704">
+        <a class="play-badge" href="tel:+918290096163" aria-label="Call to order this dish"><span>▶</span><small>MAKE IT FRESH · MAKE IT YOURS ·</small></a>
+      </div>
+    </section>
+
+    <section class="menu section-shell" id="menu" aria-labelledby="menu-title">
+      <div class="sticker" aria-hidden="true">FRESH<br><span>CHOICES</span></div>
+      <div class="section-heading centered">
+        <h2 id="menu-title">Our Signature Dishes</h2>
+        <p>From classic favorites to modern culinary creations, every dish is made with the freshest ingredients and an extra dash of love.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filter menu">
+        <button class="filter active" data-filter="all">All Menu</button>
+        <button class="filter" data-filter="burger">Burger</button>
+        <button class="filter" data-filter="pizza">Pizza</button>
+        <button class="filter" data-filter="wrap">Wraps</button>
+      </div>
+      <div class="menu-grid">
+        <article class="dish-card" data-category="burger">
+          <div class="dish-image"><img src="assets/burger.jpg" alt="House stacked burger" width="630" height="585"><a href="tel:+918290096163" aria-label="Order house burger">🛍</a></div>
+          <div class="dish-copy"><div><h3>House Stack</h3><p>Smoky, cheesy and finished with our signature sauce.</p></div><strong>₹299</strong></div>
+        </article>
+        <article class="dish-card" data-category="pizza">
+          <div class="dish-image"><img src="assets/pizza.jpg" alt="Stone baked pizza" width="630" height="585"><a href="tel:+918290096163" aria-label="Order stone baked pizza">🛍</a></div>
+          <div class="dish-copy"><div><h3>Golden Slice</h3><p>A crisp base, roasted vegetables and bubbling cheese.</p></div><strong>₹349</strong></div>
+        </article>
+        <article class="dish-card" data-category="wrap">
+          <div class="dish-image"><img src="assets/wrap.jpg" alt="Loaded grilled wraps" width="636" height="585"><a href="tel:+918290096163" aria-label="Order loaded wraps">🛍</a></div>
+          <div class="dish-copy"><div><h3>Loaded Wrap</h3><p>Grilled filling, crunchy greens and a cooling dip.</p></div><strong>₹249</strong></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="feast section-shell" id="about" aria-labelledby="feast-title">
+      <div class="section-heading centered"><span class="mini-icon">♔</span><h2 id="feast-title">A Feast for Your Eyes</h2></div>
+      <div class="feast-strip">
+        <img class="feast-main" src="assets/feast.jpg" alt="Colorful fresh platter" width="1257" height="606">
+        <img src="assets/pizza.jpg" alt="Fresh pizza" width="630" height="585">
+        <img src="assets/burger.jpg" alt="Fresh burger" width="630" height="585">
+      </div>
+    </section>
+
+    <section class="love" aria-labelledby="love-title">
+      <div class="section-shell">
+        <div class="love-mark">LOVE IT</div>
+        <div class="section-heading centered"><h2 id="love-title">They Love’s Us</h2><p>Good food has a way of bringing people together. Here is what our regulars say.</p></div>
+        <div class="reviews">
+          <blockquote><div class="stars">★★★★★</div><h3>Best Salad Man!</h3><p>Every slice is like a little piece of heaven. Fresh, vibrant, and always a hit.</p><footer><span>LA</span> Larry Alexander</footer></blockquote>
+          <blockquote class="featured"><div class="stars">★★★★★</div><h3>My new favorite</h3><p>The wrap was packed with flavor and arrived warm. Exactly what lunch should be.</p><footer><span>AN</span> Aanya N.</footer></blockquote>
+          <blockquote><div class="stars">★★★★★</div><h3>Fast and fresh</h3><p>Beautiful food, thoughtful packing, and a team that actually cares.</p><footer><span>RK</span> Rohan K.</footer></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="order-cta section-shell" id="contact">
+      <img src="assets/cta-burger.jpg" alt="Signature burger" width="485" height="565">
+      <div><span class="brand-mark">♨</span><p class="overline">Unidine</p><h2>Don’t Wait - Order Now!</h2><p>Fresh ingredients and bold flavor, delivered to your door or ready for pick-up.</p><div class="cta-actions"><a class="button button-orange" href="tel:+918290096163">Call to Order <span>→</span></a><a class="text-link" href="mailto:contact@projectmonet.space?subject=Unidine%20order">Email us</a></div></div>
+      <img src="assets/floating-menu.jpg" alt="Food being prepared" width="465" height="480">
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <div class="footer-brand"><a class="brand" href="#home"><span class="brand-mark">♨</span><span>Unidine</span></a><p>Good food, made with joy.</p></div>
+    <div><h3>Navigate</h3><a href="#home">Home</a><a href="#menu">Menu</a><a href="#about">About</a></div>
+    <div><h3>Menu</h3><a href="#menu">Burgers</a><a href="#menu">Pizza</a><a href="#menu">Wraps</a></div>
+    <div><h3>Contact</h3><a href="tel:+918290096163">+91 82900 96163</a><a href="mailto:contact@projectmonet.space">contact@projectmonet.space</a></div>
+    <div class="footer-bottom"><span>© 2026 Unidine. All rights reserved.</span><a href="https://www.projectmonet.space" target="_blank" rel="noopener">Made by Projectmonet</a></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
